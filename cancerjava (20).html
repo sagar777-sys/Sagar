@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Cancer Awareness</title>
+    <script type="text/javascript">
+        // Function to change the background color
+        function changeBackgroundColor(color) {
+            document.body.style.backgroundColor = color;
+        }
+
+        // Function to show an alert when a link is clicked
+        function showAlert(message) {
+            alert(message);
+        }
+
+        // Function to toggle the visibility of the table
+        function toggleTable() {
+            var table = document.getElementById("cancerStats");
+            if (table.style.display === "none") {
+                table.style.display = "block";
+            } else {
+                table.style.display = "none";
+            }
+        }
+    </script>
+</head>
+<body bgcolor="#00F1FE">
+
+    <h1>Cancer Awareness</h1>
+
+    <p>Raising awareness about <strong>cancer</strong> can help save lives. Early detection and timely treatment are key to overcoming this illness.</p>
+
+    <p><em>Everyone</em> should be aware of the symptoms and prevention strategies.</p>
+
+    <img src="https://media.gettyimages.com/id/1623197589/photo/cancer-cells-vis.jpg?s=2048x2048&w=gi&k=20&c=RDLe-3r5wKBJK1mvb2wyVE4kLrYr4Ox56Q_rDQJbgcQ=" alt="images" width="1000px" height="300px" >
+
+
+    <button onclick="changeBackgroundColor('#FF6347')">Change Background to Tomato</button>
+    <button onclick="changeBackgroundColor('#98FB98')">Change Background to Pale Green</button>
+
+    <br><br>
+
+    <!-- Toggle button for the table -->
+    <button onclick="toggleTable()">Toggle Cancer Statistics Table</button>
+
+    <!-- Table tag with an ID to toggle visibility -->
+    <table id="cancerStats" border="1">
+        <caption><strong>Cancer Statistics Worldwide</strong></caption>
+        <thead>
+            <tr>
+                <th>Country</th>
+                <th>Cases per Year</th>
+                <th>Deaths per Year</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>USA</td>
+                <td>1,900,000</td>
+                <td>600,000</td>
+            </tr>
+            <tr class="highlight">
+                <td>India</td>
+                <td>1,300,000</td>
+                <td>700,000</td>
+            </tr>
+            <tr>
+                <td>UK</td>
+                <td>375,000</td>
+                <td>165,000</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <br>
+
+     <img src= https://media.gettyimages.com/id/1158304420/photo/portrait-of-a-young-ethnic-girl-with-cancer.jpg?s=2048x2048&w=gi&k=20&c=gprKqGuBo6aLUyiDlueemerm4eW992TnIBWfrD_aZMg= width="1000px" height="300px" >
+
+
+    <p><strong>For more information, visit the</strong> <a href="https://www.cancer.org" target="_blank" onclick="showAlert('Visiting the American Cancer Society website')">American Cancer Society</a>.</p>
+
+    <a href="https://aacrjournals.org/cancerdiscovery" target="_blank"><span style="color: #FF0015;"><strong>DISCOVERY OF CANCER</strong></span></a><br>
+
+    <a href="https://www.cancerresearchuk.org/health-professional/awareness-and-prevention/cancer-awareness-training-programme#:~:text=Increasing%20cancer%20awareness%20in%20more,increases%20the%20chance%20of%20survival." target="_blank"><span style="color: #FF0015;"><strong>AWARENESS</strong></span></a>
+
+    <p><strong>It's crucial to <span style="color: #2980B9;"><strong>spread awareness</strong></span> and educate people about cancer.</strong></p>
+
+    <p><strong><i>Early detection</i>, <b>regular check-ups</b>, and <u>leading a healthy lifestyle</u> are important steps in fighting cancer.</strong></p>
+
+</body>
+</html>
